@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jnshu.mapper.BannerMapper">
+  <resultMap id="BaseResultMap" type="com.jnshu.pojo.Banner">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="course_id" jdbcType="BIGINT" property="courseId" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="update_at" jdbcType="BIGINT" property="updateAt" />
+    <result column="update_by" jdbcType="BIGINT" property="updateBy" />
+    <result column="creat_at" jdbcType="BIGINT" property="creatAt" />
+    <result column="creat_by" jdbcType="BIGINT" property="creatBy" />
+    <result column="creat_name" jdbcType="VARCHAR" property="creatName" />
+    <result column="update_name" jdbcType="VARCHAR" property="updateName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, title, url, course_id,`status`, update_at, update_by, creat_at, creat_by,creat_name,update_name
+  </sql>
+  <!--数据回显-->
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_banner
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_banner
+    where course_id = #{courseId,jdbcType=BIGINT}
+  </select>
+  <!--前台轮播图展示-->
+  <select id="select" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_banner where status = 1
+  </select>
+  <!--后台轮播图列表-->
+  <select id="selectAll" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_banner ORDER BY `creat_at` DESC
+  </select>
+  <!--删除-->
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_banner
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <!--新增-->
+  <insert id="insert" parameterType="com.jnshu.pojo.Banner">
+    insert into tb_banner
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="url != null">
+        url,
+      </if>
+      <if test="courseId != null">
+        course_id,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="updateAt != null">
+        update_at,
+      </if>
+      <if test="updateBy != null">
+        update_by,
+      </if>
+      <if test="creatAt != null">
+        creat_at,
+      </if>
+      <if test="creatBy != null">
+        creat_by,
+      </if>
+      <if test="creatName != null">
+        creat_name,
+      </if>
+      <if test="updateName != null">
+        update_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null">
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="courseId != null">
+        #{courseId,jdbcType=BIGINT},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="updateAt != null">
+        #{updateAt,jdbcType=BIGINT},
+      </if>
+      <if test="updateBy != null">
+        #{updateBy,jdbcType=BIGINT},
+      </if>
+      <if test="creatAt != null">
+        #{creatAt,jdbcType=BIGINT},
+      </if>
+      <if test="creatBy != null">
+        #{creatBy,jdbcType=BIGINT},
+      </if>
+      <if test="creatName != null">
+        #{creatName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateName != null">
+        #{updateName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <!--修改-->
+  <update id="updateByPrimaryKeySelective" parameterType="com.jnshu.pojo.Banner">
+    update tb_banner
+    <set>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null">
+        url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="courseId != null">
+        course_id = #{courseId,jdbcType=BIGINT},
+      </if>
+      <if test="status != null">
+        `status` = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="updateAt != null">
+        update_at = #{updateAt,jdbcType=BIGINT},
+      </if>
+      <if test="updateBy != null">
+        update_by = #{updateBy,jdbcType=BIGINT},
+      </if>
+      <if test="creatAt != null">
+        creat_at = #{creatAt,jdbcType=BIGINT},
+      </if>
+      <if test="creatBy != null">
+        creat_by = #{creatBy,jdbcType=BIGINT},
+      </if>
+      <if test="creatName != null">
+        creat_name = #{creatName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateName != null">
+        update_name = #{updateName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

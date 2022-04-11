@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jnshu.mapper.UserCourseMapper">
+    <resultMap id="BaseResultMap" type="com.jnshu.pojo.UserCourse">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="user_id" jdbcType="BIGINT" property="userId" />
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="grade" jdbcType="VARCHAR" property="grade" />
+        <result column="subject" jdbcType="VARCHAR" property="subject" />
+        <result column="type" jdbcType="INTEGER" property="type" />
+        <result column="price" jdbcType="INTEGER" property="price" />
+        <result column="img" jdbcType="VARCHAR" property="img" />
+        <result column="vedio" jdbcType="VARCHAR" property="vedio" />
+        <result column="content" jdbcType="VARCHAR" property="content" />
+        <result column="status" jdbcType="INTEGER" property="status" />
+        <result column="update_at" jdbcType="BIGINT" property="updateAt" />
+        <result column="update_by" jdbcType="BIGINT" property="updateBy" />
+        <result column="creat_at" jdbcType="BIGINT" property="creatAt" />
+        <result column="creat_by" jdbcType="BIGINT" property="creatBy" />
+        <result column="purchased" jdbcType="INTEGER" property="purchased" />
+        <result column="collect" jdbcType="INTEGER" property="collect" />
+</resultMap>
+    <sql id="Base_Column_List">
+    id,user_id, title, grade, subject, `type`, price, img, vedio, content, `status`, update_at,
+    update_by, creat_at, creat_by,purchased,collect
+  </sql>
+    <!--个人中心 已购课程 -->
+  <select id="selectAll" parameterType="java.lang.Long" resultType="com.jnshu.pojo.UserCourse">
+    SELECT t1.*,t2.purchased,t2.user_id
+    FROM tb_course t1 LEFT JOIN tb_user_course t2
+    ON t1.id=t2.course_id AND t2.user_id=#{userId,jdbcType=BIGINT}
+    WHERE t1.`status`=1 AND t2.purchased=1;
+  </select>
+    <!--个人中心 收藏课程 -->
+  <select id="getAll" parameterType="java.lang.Long" resultType="com.jnshu.pojo.UserCourse">
+    SELECT t1.*,t2.purchased,t2.collect,t2.user_id
+    FROM tb_course t1 LEFT JOIN tb_user_course t2
+    ON t1.id=t2.course_id AND t2.user_id=#{userId,jdbcType=BIGINT}
+    WHERE t1.`status`=1 AND t2.collect=1;
+  </select>
+    <!--前台课程展示 -->
+  <select id="getById" parameterType="com.jnshu.pojo.UserCourse" resultMap="BaseResultMap">
+    SELECT t1.*,t2.purchased,t2.collect,t2.user_id
+    FROM tb_course t1 LEFT JOIN tb_user_course t2
+    ON t1.id=t2.course_id AND t2.user_id=#{userId,jdbcType=BIGINT}
+    WHERE t1.`status`=1 AND t1.id=#{id,jdbcType=BIGINT};
+  </select>
+    <!--前台年级科目课程 -->
+  <select id="selectById" parameterType="com.jnshu.pojo.UserCourse" resultMap="BaseResultMap">
+    SELECT t1.*,t3.purchased,t3.collect,t3.user_id
+    FROM tb_course t1 LEFT JOIN tb_user_course t3
+    ON t1.id=t3.course_id AND t3.user_id=#{userId,jdbcType=BIGINT},
+	(SELECT `subject`, GROUP_CONCAT(id) AS ids FROM tb_course WHERE grade =#{grade,jdbcType=VARCHAR} GROUP BY `subject`) AS t2
+    WHERE `status`=1 AND
+	FIND_IN_SET(t1.id, t2.ids) BETWEEN 1 AND 10
+    ORDER BY `subject` ASC,creat_at DESC
+  </select>
+    <!--前台更多课程-->
+  <select id="selectByIdAll" parameterType="com.jnshu.pojo.UserCourse" resultMap="BaseResultMap">
+    SELECT t1.*,t2.purchased,t2.collect,t2.user_id
+    FROM tb_course t1 LEFT JOIN tb_user_course t2
+    ON t1.id=t2.course_id AND t2.user_id=#{userId,jdbcType=BIGINT}
+    WHERE t1.`status`=1 AND t1.grade=#{grade,jdbcType=VARCHAR}
+    AND t1.subject=#{subject,jdbcType=VARCHAR};
+  </select>
+  <select id="searchCourse" parameterType="com.jnshu.pojo.UserCourse" resultMap="BaseResultMap">
+    SELECT t1.*,t2.purchased,t2.user_id
+    FROM tb_course t1 LEFT JOIN tb_user_course t2
+    ON t1.id=t2.course_id AND t2.user_id=#{userId,jdbcType=BIGINT}
+    WHERE t1.`status`=1 AND t1.grade=#{grade,jdbcType=VARCHAR}
+    AND t1.title LIKE #{title};
+  </select>
+</mapper>

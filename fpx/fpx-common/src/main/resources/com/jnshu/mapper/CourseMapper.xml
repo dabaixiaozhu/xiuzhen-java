@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jnshu.mapper.CourseMapper">
+  <resultMap id="BaseResultMap" type="com.jnshu.pojo.Course">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="grade" jdbcType="VARCHAR" property="grade" />
+    <result column="subject" jdbcType="VARCHAR" property="subject" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="img" jdbcType="VARCHAR" property="img" />
+    <result column="vedio" jdbcType="VARCHAR" property="vedio" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="update_at" jdbcType="BIGINT" property="updateAt" />
+    <result column="update_by" jdbcType="BIGINT" property="updateBy" />
+    <result column="creat_at" jdbcType="BIGINT" property="creatAt" />
+    <result column="creat_by" jdbcType="BIGINT" property="creatBy" />
+    <result column="creat_name" jdbcType="VARCHAR" property="creatName" />
+    <result column="update_name" jdbcType="VARCHAR" property="updateName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, title, grade, subject, `type`, price, img, vedio, content, `status`, update_at, 
+    update_by, creat_at, creat_by,creat_name,update_name
+  </sql>
+  <!--数据回显-->
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_course
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+
+  <select id="getAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_course
+    <trim prefix="WHERE" suffixOverrides="AND">
+    <if test="title != null">
+    title LIKE concat ('%',#{title},'%') AND
+    </if>
+    <if test="grade != null">
+    grade=#{grade,jdbcType=VARCHAR} AND
+    </if>
+    <if test="type != null">
+    `type`=#{type,jdbcType=INTEGER} AND
+    </if>
+    <if test="status != null">
+    `status`=#{status,jdbcType=INTEGER} AND
+    </if>
+    <if test="creatTimeStart != null">
+    `creat_at` between #{creatTimeStart} AND #{creatTimeEnd}
+    </if>
+    </trim>
+    ORDER BY `creat_at` DESC
+  </select>
+
+
+
+  <!--课程列表-->
+  <select id="selectAll" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_course ORDER BY `creat_at` DESC
+  </select>
+  <!--删除-->
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_course
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <!--新增-->
+  <insert id="insert" parameterType="com.jnshu.pojo.Course">
+    insert into tb_course
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="subject != null">
+        subject,
+      </if>
+      <if test="type != null">
+        `type`,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="img != null">
+        img,
+      </if>
+      <if test="vedio != null">
+        vedio,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="status != null">
+        `status`,
+      </if>
+      <if test="updateAt != null">
+        update_at,
+      </if>
+      <if test="updateBy != null">
+        update_by,
+      </if>
+      <if test="creatAt != null">
+        creat_at,
+      </if>
+      <if test="creatBy != null">
+        creat_by,
+      </if>
+      <if test="creatName != null">
+        creat_name,
+      </if>
+      <if test="updateName != null">
+        update_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="subject != null">
+        #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=INTEGER},
+      </if>
+      <if test="img != null">
+        #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="vedio != null">
+        #{vedio,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="updateAt != null">
+        #{updateAt,jdbcType=BIGINT},
+      </if>
+      <if test="updateBy != null">
+        #{updateBy,jdbcType=BIGINT},
+      </if>
+      <if test="creatAt != null">
+        #{creatAt,jdbcType=BIGINT},
+      </if>
+      <if test="creatBy != null">
+        #{creatBy,jdbcType=BIGINT},
+      </if>
+      <if test="creatName != null">
+        #{creatName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateName != null">
+        #{updateName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <!--修改-->
+  <update id="updateByPrimaryKeySelective" parameterType="com.jnshu.pojo.Course">
+    update tb_course
+    <set>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="subject != null">
+        subject = #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        `type` = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=INTEGER},
+      </if>
+      <if test="img != null">
+        img = #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="vedio != null">
+        vedio = #{vedio,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        `status` = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="updateAt != null">
+        update_at = #{updateAt,jdbcType=BIGINT},
+      </if>
+      <if test="updateBy != null">
+        update_by = #{updateBy,jdbcType=BIGINT},
+      </if>
+      <if test="creatAt != null">
+        creat_at = #{creatAt,jdbcType=BIGINT},
+      </if>
+      <if test="creatBy != null">
+        creat_by = #{creatBy,jdbcType=BIGINT},
+      </if>
+      <if test="creatName != null">
+        creat_name = #{creatName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateName != null">
+        update_name = #{updateName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

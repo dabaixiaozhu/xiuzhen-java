@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fpx-admin-controller" />
+        <module name="fpx-web-controller" />
+        <module name="fpx-admin-service" />
+        <module name="fpx-common" />
+        <module name="fpx-web-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="fpx-admin-controller" options="-parameters" />
+      <module name="fpx-admin-service" options="-parameters" />
+      <module name="fpx-common" options="-parameters" />
+      <module name="fpx-web-controller" options="-parameters" />
+      <module name="fpx-web-service" options="-parameters" />
+    </option>
+  </component>
+</project>

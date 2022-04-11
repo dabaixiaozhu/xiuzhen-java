@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8c4727c1-3686-47c1-b4e6-b512904f05b2" name="Default Changelist" comment="L addservice" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/soft/maven" />
+        <option name="userSettingsFile" value="C:\soft\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectId" id="1UdWAAspEPVRLcOvwPXdAEt89vh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5" value="5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="168" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="168" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="168" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="168" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="168" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5" value="203" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="168" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="168" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="168" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="168" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="168" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="203" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AllJava/all/foodie-dev" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\linze\Desktop\fpx\fpx-common\src\main\java\com\jnshu" />
+      <recent name="C:\Users\linze\Desktop\fpx\fpx-admin-controller\src\main\java\com\jnshu\service" />
+      <recent name="C:\Users\linze\Desktop\fpx\fpx-web-controller\src\main\java\com\jnshu" />
+      <recent name="C:\Users\linze\Desktop\fpx\fpx-admin-controller\src\main\java\com\jnshu" />
+      <recent name="C:\Users\linze\Desktop\fpx\fpx-common\src\main\java\com\jnshu\util" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jnshu.util" />
+      <recent name="com.jnshu" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\linze\Desktop\fpx\fpx-common\src\main\java\com\jnshu\mapper" />
+      <recent name="C:\Users\linze\Desktop\fpx\fpx-common\src\main\java\com\jnshu\pojo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestRedis.test2">
+    <configuration name="DeleteTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fpx-admin-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jnshu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jnshu" />
+      <option name="MAIN_CLASS_NAME" value="com.jnshu.DeleteTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRedis.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fpx-web-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jnshu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jnshu" />
+      <option name="MAIN_CLASS_NAME" value="com.jnshu.TestRedis" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRedis.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fpx-web-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jnshu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jnshu" />
+      <option name="MAIN_CLASS_NAME" value="com.jnshu.TestRedis" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminControllerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="fpx-admin-controller" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jnshu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jnshu.AdminControllerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="fpx-admin-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jnshu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jnshu.AdminServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebControllerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="fpx-web-controller" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jnshu.WebControllerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="fpx-web-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jnshu.WebServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AdminServiceApplication" />
+        <item itemvalue="Spring Boot.AdminControllerApplication" />
+        <item itemvalue="JUnit.TestRedis.test2" />
+        <item itemvalue="JUnit.TestRedis.test1" />
+        <item itemvalue="JUnit.DeleteTest.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\linze\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c4727c1-3686-47c1-b4e6-b512904f05b2" name="Default Changelist" comment="" />
+      <created>1575686806830</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575686806830</updated>
+      <workItem from="1575686808711" duration="1207000" />
+      <workItem from="1575688026813" duration="4297000" />
+      <workItem from="1575711206362" duration="1278000" />
+      <workItem from="1575892589820" duration="119000" />
+      <workItem from="1576062070122" duration="32000" />
+      <workItem from="1576310213203" duration="78000" />
+      <workItem from="1576330246131" duration="4400000" />
+      <workItem from="1576376155512" duration="627000" />
+      <workItem from="1576377198268" duration="2717000" />
+      <workItem from="1576410500743" duration="3738000" />
+      <workItem from="1576415870280" duration="1351000" />
+      <workItem from="1576460181632" duration="1750000" />
+      <workItem from="1576466917231" duration="509000" />
+      <workItem from="1576467442641" duration="32989000" />
+      <workItem from="1576544538210" duration="10830000" />
+      <workItem from="1576570738122" duration="19860000" />
+      <workItem from="1576591430220" duration="962000" />
+      <workItem from="1576593002534" duration="3945000" />
+      <workItem from="1576630991231" duration="10722000" />
+      <workItem from="1576647043757" duration="3376000" />
+      <workItem from="1576650632879" duration="780000" />
+      <workItem from="1576651458231" duration="10225000" />
+      <workItem from="1576661962293" duration="25403000" />
+      <workItem from="1576717232074" duration="43167000" />
+      <workItem from="1576803863141" duration="15327000" />
+      <workItem from="1576891454652" duration="557000" />
+      <workItem from="1576892103356" duration="12745000" />
+      <workItem from="1576977225119" duration="3121000" />
+      <workItem from="1577075230544" duration="602000" />
+      <workItem from="1577093984074" duration="4258000" />
+      <workItem from="1577150680317" duration="960000" />
+      <workItem from="1577545245569" duration="598000" />
+      <workItem from="1577547275216" duration="846000" />
+      <workItem from="1577622500185" duration="9738000" />
+      <workItem from="1577674952416" duration="1053000" />
+      <workItem from="1577692261143" duration="3405000" />
+      <workItem from="1577754881734" duration="6161000" />
+      <workItem from="1577800796855" duration="172000" />
+      <workItem from="1577808313786" duration="218000" />
+      <workItem from="1577882206107" duration="217000" />
+      <workItem from="1577893608692" duration="1167000" />
+      <workItem from="1577968249990" duration="2965000" />
+      <workItem from="1577975635660" duration="1334000" />
+      <workItem from="1578014746705" duration="895000" />
+      <workItem from="1578015721275" duration="2100000" />
+      <workItem from="1578451860509" duration="625000" />
+      <workItem from="1578475595214" duration="141000" />
+      <workItem from="1578551079281" duration="257000" />
+      <workItem from="1578552849179" duration="5264000" />
+      <workItem from="1578569602427" duration="1574000" />
+      <workItem from="1578571207063" duration="155000" />
+      <workItem from="1578571539069" duration="169000" />
+      <workItem from="1578577196389" duration="4218000" />
+      <workItem from="1578621863582" duration="497000" />
+      <workItem from="1587228637700" duration="2201000" />
+      <workItem from="1587269714120" duration="1085000" />
+      <workItem from="1587300212403" duration="701000" />
+      <workItem from="1587440407883" duration="2743000" />
+      <workItem from="1587531643562" duration="1264000" />
+      <workItem from="1587545327477" duration="615000" />
+      <workItem from="1587619794470" duration="1907000" />
+      <workItem from="1587634528128" duration="600000" />
+      <workItem from="1587651825317" duration="606000" />
+      <workItem from="1587653543988" duration="602000" />
+    </task>
+    <task id="LOCAL-00084" summary="L addservice">
+      <created>1576747780727</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1576747780727</updated>
+    </task>
+    <task id="LOCAL-00085" summary="L addservice">
+      <created>1576747902695</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1576747902695</updated>
+    </task>
+    <task id="LOCAL-00086" summary="L addservice">
+      <created>1576751371364</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1576751371364</updated>
+    </task>
+    <task id="LOCAL-00087" summary="L addservice">
+      <created>1576753520671</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1576753520671</updated>
+    </task>
+    <task id="LOCAL-00088" summary="L addservice">
+      <created>1576754786740</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1576754786741</updated>
+    </task>
+    <task id="LOCAL-00089" summary="L addservice">
+      <created>1576755564844</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1576755564844</updated>
+    </task>
+    <task id="LOCAL-00090" summary="L addservice">
+      <created>1576755736299</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1576755736300</updated>
+    </task>
+    <task id="LOCAL-00091" summary="L addservice">
+      <created>1576756181223</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1576756181224</updated>
+    </task>
+    <task id="LOCAL-00092" summary="L addservice">
+      <created>1576757746344</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1576757746345</updated>
+    </task>
+    <task id="LOCAL-00093" summary="L addservice">
+      <created>1576758070151</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1576758070151</updated>
+    </task>
+    <task id="LOCAL-00094" summary="L addservice">
+      <created>1576758222573</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1576758222573</updated>
+    </task>
+    <task id="LOCAL-00095" summary="L addservice">
+      <created>1576759448448</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1576759448448</updated>
+    </task>
+    <task id="LOCAL-00096" summary="L addservice">
+      <created>1576759583323</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1576759583323</updated>
+    </task>
+    <task id="LOCAL-00097" summary="L addservice">
+      <created>1576759791055</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1576759791055</updated>
+    </task>
+    <task id="LOCAL-00098" summary="L addservice">
+      <created>1576805649836</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1576805649837</updated>
+    </task>
+    <task id="LOCAL-00099" summary="L addservice">
+      <created>1576806091169</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1576806091169</updated>
+    </task>
+    <task id="LOCAL-00100" summary="L addservice">
+      <created>1576806883200</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1576806883200</updated>
+    </task>
+    <task id="LOCAL-00101" summary="L addservice">
+      <created>1576807052016</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1576807052016</updated>
+    </task>
+    <task id="LOCAL-00102" summary="L addservice">
+      <created>1576807688409</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1576807688409</updated>
+    </task>
+    <task id="LOCAL-00103" summary="L addservice">
+      <created>1576822330350</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1576822330351</updated>
+    </task>
+    <task id="LOCAL-00104" summary="L addservice">
+      <created>1576823707696</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1576823707696</updated>
+    </task>
+    <task id="LOCAL-00105" summary="L addservice">
+      <created>1576825409905</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1576825409905</updated>
+    </task>
+    <task id="LOCAL-00106" summary="L addservice">
+      <created>1576825572014</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1576825572014</updated>
+    </task>
+    <task id="LOCAL-00107" summary="L addservice">
+      <created>1576825761945</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1576825761945</updated>
+    </task>
+    <task id="LOCAL-00108" summary="L addservice">
+      <created>1576893926890</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1576893926891</updated>
+    </task>
+    <task id="LOCAL-00109" summary="L addservice">
+      <created>1576898122458</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1576898122458</updated>
+    </task>
+    <task id="LOCAL-00110" summary="L addservice">
+      <created>1576898203503</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1576898203503</updated>
+    </task>
+    <task id="LOCAL-00111" summary="L addservice">
+      <created>1576921861847</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1576921861847</updated>
+    </task>
+    <task id="LOCAL-00112" summary="L addservice">
+      <created>1576978772869</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1576978772869</updated>
+    </task>
+    <task id="LOCAL-00113" summary="L addservice">
+      <created>1577111221653</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1577111221654</updated>
+    </task>
+    <task id="LOCAL-00114" summary="L addservice">
+      <created>1577547414805</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1577547414806</updated>
+    </task>
+    <task id="LOCAL-00115" summary="L addservice">
+      <created>1577547762651</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1577547762651</updated>
+    </task>
+    <task id="LOCAL-00116" summary="L addservice">
+      <created>1577623404621</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1577623404622</updated>
+    </task>
+    <task id="LOCAL-00117" summary="L addservice">
+      <created>1577625594825</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1577625594825</updated>
+    </task>
+    <task id="LOCAL-00118" summary="L addservice">
+      <created>1577628601045</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1577628601045</updated>
+    </task>
+    <task id="LOCAL-00119" summary="L addservice">
+      <created>1577631775960</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1577631775960</updated>
+    </task>
+    <task id="LOCAL-00120" summary="L addservice">
+      <created>1577694215186</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1577694215187</updated>
+    </task>
+    <task id="LOCAL-00121" summary="L addservice">
+      <created>1577755184399</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1577755184400</updated>
+    </task>
+    <task id="LOCAL-00122" summary="L addservice">
+      <created>1577784047021</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1577784047021</updated>
+    </task>
+    <task id="LOCAL-00123" summary="L addservice">
+      <created>1577893926481</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1577893926481</updated>
+    </task>
+    <task id="LOCAL-00124" summary="L addservice">
+      <created>1577969855714</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1577969855715</updated>
+    </task>
+    <task id="LOCAL-00125" summary="L addservice">
+      <created>1577970190975</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1577970190975</updated>
+    </task>
+    <task id="LOCAL-00126" summary="L addservice">
+      <created>1577970786680</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1577970786680</updated>
+    </task>
+    <task id="LOCAL-00127" summary="L addservice">
+      <created>1577975882316</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1577975882316</updated>
+    </task>
+    <task id="LOCAL-00128" summary="L addservice">
+      <created>1578554599228</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1578554599229</updated>
+    </task>
+    <task id="LOCAL-00129" summary="L addservice">
+      <created>1578559061297</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1578559061297</updated>
+    </task>
+    <task id="LOCAL-00130" summary="L addservice">
+      <created>1578569811423</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1578569811424</updated>
+    </task>
+    <task id="LOCAL-00131" summary="L addservice">
+      <created>1578571341624</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1578571341624</updated>
+    </task>
+    <task id="LOCAL-00132" summary="L addservice">
+      <created>1578580839242</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1578580839242</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="port ini1" />
+    <MESSAGE value="mysql update1" />
+    <MESSAGE value="mysql update2" />
+    <MESSAGE value="admin1" />
+    <MESSAGE value="L structure1" />
+    <MESSAGE value="L pom1" />
+    <MESSAGE value="L application1" />
+    <MESSAGE value="L workspace1" />
+    <MESSAGE value="L total Structure1" />
+    <MESSAGE value="L first controller" />
+    <MESSAGE value="L admin fake data complete" />
+    <MESSAGE value="L Service1" />
+    <MESSAGE value="L web fake data complete" />
+    <MESSAGE value="L service mvn package" />
+    <MESSAGE value="L mysql up" />
+    <MESSAGE value="L service2" />
+    <MESSAGE value="L add mysql" />
+    <MESSAGE value="L package repair" />
+    <MESSAGE value="L password" />
+    <MESSAGE value="L add @author" />
+    <MESSAGE value="L add @author L" />
+    <MESSAGE value="L addservice2" />
+    <MESSAGE value="L addservice1" />
+    <MESSAGE value="L messageDelete" />
+    <MESSAGE value="L addservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="L addservice" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="592" y="222" key="FileChooserDialogImpl" timestamp="1587625703835">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="592" y="222" key="FileChooserDialogImpl/0.0.1536.834/8.-1080.1920.1050@0.0.1536.834" timestamp="1587625703835" />
+    <state x="748" y="-800" key="FileChooserDialogImpl/0.0.1536.834/8.-1080.1920.1050@8.-1080.1920.1050" timestamp="1587270198793" />
+    <state x="231" y="82" width="1174" height="792" key="dock-window-1" timestamp="1587229729817">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="231" y="82" width="1174" height="792" key="dock-window-1/0.0.1536.834/8.-1080.1920.1050@0.0.1536.834" timestamp="1587229729817" />
+    <state x="538" y="-764" key="svn.repositoryBrowser" timestamp="1587228687408">
+      <screen x="8" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="538" y="-764" key="svn.repositoryBrowser/0.0.1536.834/8.-1080.1920.1050@8.-1080.1920.1050" timestamp="1587228687408" />
+  </component>
+</project>
